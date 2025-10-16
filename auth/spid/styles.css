@@ -1,0 +1,21 @@
+.auth-spid-container {
+    text-align: center;
+}
+
+.auth-spid-button {
+    background-color: #06c;
+    border-color: #06c;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.auth-spid-button:hover,
+.auth-spid-button:focus {
+    background-color: #004b9b;
+    border-color: #004b9b;
+    color: #fff;
+    text-decoration: none;
+}
