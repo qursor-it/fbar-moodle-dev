@@ -1,0 +1,20 @@
+{
+    "name": "moodle/auth_spid",
+    "description": "SPID integration plugin for Moodle built on top of auth_saml2",
+    "type": "moodle-auth",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": ">=8.1",
+        "italia/spid-cie-php": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "auth_spid\\": "classes/"
+        }
+    },
+    "extra": {
+        "moodle-plugin": {
+            "component": "auth_spid"
+        }
+    }
+}

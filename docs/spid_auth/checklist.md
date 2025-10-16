@@ -1,0 +1,27 @@
+# Checklist integrazione SPID
+
+- [x] Passo 1 - Analisi plugin esistente e dipendenze
+- [x] Passo 2 - Definizione architettura plugin `auth/spid`
+  - [x] Redatta architettura e struttura cartelle previste.
+  - [x] Elencate dipendenze e flussi principali.
+  - [ ] Validare punti di estensione con `auth_saml2` reale.
+- [x] Passo 3 - Preparazione Composer e librerie
+  - [x] Creato `composer.json` locale al plugin.
+  - [x] Documentati i comandi `composer install` e gestione vendor.
+  - [ ] Eseguire installazione libreria in ambiente con rete.
+- [x] Passo 4 - Implementazione autenticazione principale
+  - [x] Creata classe `auth\spid\auth` con pulsante login e integrazione servizi.
+  - [x] Implementate classi di servizio (config, metadata, certificati, API, task).
+  - [ ] Validare integrazione runtime con `auth_saml2` per aggiornare utenti.
+- [x] Passo 5 - Metadata, certificati e configurazione admin
+  - [x] Creato endpoint pubblico metadata e CLI di rigenerazione.
+  - [x] Aggiunta gestione certificati in settings e repository.
+  - [x] Registrato task schedulato per aggiornare metadata.
+  - [ ] Fornire file di esempio certificati/metadata.
+- [x] Passo 6 - Test funzionali e conformita
+  - [x] Documentato piano di test con scenari chiave.
+  - [ ] Eseguire test SPID su ambiente con IdP reale/sandbox.
+- [x] Passo 7 - Documentazione e consegna
+  - [x] Aggiornato README plugin e documentazione `docs/spid_auth/`.
+  - [x] Creata checklist di deploy.
+  - [ ] Preparare esempi metadata/certificati per revisione.
